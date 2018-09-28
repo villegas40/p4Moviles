@@ -1,5 +1,6 @@
 package com.example.abiel.p4llamcamnav;
 
+import android.Manifest;
 import android.content.Intent;
 import android.net.Uri;
 import android.provider.MediaStore;
@@ -25,7 +26,7 @@ public class MainActivity extends AppCompatActivity {
 
         final Intent camera = new Intent(MediaStore.ACTION_IMAGE_CAPTURE);
         final Intent navigation = new Intent();
-        final Intent call = new Intent(Intent.ACTION_DIAL);
+        final Intent call = new Intent(Intent.ACTION_CALL);
 
         btnCamera.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,7 +48,8 @@ public class MainActivity extends AppCompatActivity {
         btnCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                call.setData(Uri.parse("tel:6642853870"));
+                //String callPermision = Manifest.permission.CALL_PHONE;
+                call.setData(Uri.parse("tel:6642952892"));
                 startActivity(call);
             }
         });

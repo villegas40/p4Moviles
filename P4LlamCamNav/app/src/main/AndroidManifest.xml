@@ -20,5 +20,5 @@
     <!--Manifest Camara-->
     <uses-feature android:name="android.hardware.camera" android:required="true" />
     <!--Manifest Llamada-->
-    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>
+    <uses-permission android:name="android.permission.CALL_PHONE" android:required="true"></uses-permission>
 </manifest>
